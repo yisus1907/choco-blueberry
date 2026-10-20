@@ -1,11 +1,340 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Layout from "../layouts/Layout.astro";
+import "../styles/global.css";
 ---
 
-<Layout>
-	<Welcome />
+<Layout title="Choco Blueberry">
+
+
+<header class="header">
+
+<div class="container nav">
+
+<div class="logo">
+<img src="/img/logo.png" alt="Choco Blueberry">
+</div>
+
+
+<nav>
+<a href="#inicio">Inicio</a>
+<a href="#productos">Productos</a>
+<a href="#nosotros">Nosotros</a>
+<a href="#contacto">Contacto</a>
+</nav>
+
+
+<a class="btn" href="#">
+Comprar
+</a>
+
+
+</div>
+
+</header>
+
+
+
+<section class="hero" id="inicio">
+
+
+<div class="container hero-content">
+
+
+<h1>
+El sabor natural del
+<span>Chocó Blueberry</span>
+</h1>
+
+
+<p>
+Arándanos frescos cultivados en el corazón
+del Chocó Andino, con calidad, sabor y
+pureza natural.
+</p>
+
+
+<a class="btn hero-btn">
+Conoce nuestros productos
+</a>
+
+
+</div>
+
+
+</section>
+
+
+
+
+<section class="nosotros" id="nosotros">
+
+
+<div class="container">
+
+
+<h2>
+¿Por qué elegir Choco Blueberry?
+</h2>
+
+
+
+<div class="cards">
+
+
+<div class="card">
+
+<div class="icon">
+🌱
+</div>
+
+<h3>
+Producto natural
+</h3>
+
+<p>
+Cultivado con prácticas responsables
+y cuidado del medio ambiente.
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<div class="icon">
+🫐
+</div>
+
+<h3>
+Máxima frescura
+</h3>
+
+<p>
+Seleccionamos los mejores frutos
+para garantizar calidad.
+</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<div class="icon">
+🚚
+</div>
+
+<h3>
+Entrega directa
+</h3>
+
+<p>
+Del cultivo directamente
+hasta tu hogar.
+</p>
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<section class="productos" id="productos">
+
+
+<div class="container">
+
+
+<h2>
+Nuestros productos
+</h2>
+
+
+
+<div class="productos-grid">
+
+
+<div class="producto">
+
+
+<img src="/img/producto1.png">
+
+
+<h3>
+Caja Premium
+</h3>
+
+
+<ul>
+
+<li>125 gramos - $2.00</li>
+
+<li>500 gramos - $7.70</li>
+
+<li>1 kilogramo - $15.00</li>
+
+</ul>
+
+
+<button>
+Comprar
+</button>
+
+
+</div>
+
+
+
+
+
+<div class="producto">
+
+
+<img src="/img/producto2.png">
+
+
+<h3>
+Caja Grande
+</h3>
+
+
+<ul>
+
+<li>125 gramos - $1.75</li>
+
+<li>500 gramos - $6.85</li>
+
+<li>1 kilogramo - $13.20</li>
+
+</ul>
+
+
+<button>
+Comprar
+</button>
+
+
+</div>
+
+
+
+
+
+<div class="producto">
+
+
+<img src="/img/producto3.png">
+
+
+<h3>
+Caja Mediana
+</h3>
+
+
+<ul>
+
+<li>125 gramos - $1.60</li>
+
+<li>500 gramos - $6.25</li>
+
+<li>1 kilogramo - $12.00</li>
+
+</ul>
+
+
+<button>
+Comprar
+</button>
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<section class="banner">
+
+
+<div class="container">
+
+
+<h2>
+Frescura directamente del cultivo
+</h2>
+
+
+<p>
+Un producto saludable, delicioso y natural.
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<section class="contacto" id="contacto">
+
+
+<div class="container">
+
+
+<h2>
+Haz tu pedido ahora
+</h2>
+
+
+<p>
+Escríbenos por WhatsApp y recibe tus arándanos.
+</p>
+
+
+<a class="btn">
+Contactar WhatsApp
+</a>
+
+
+</div>
+
+
+</section>
+
+
+
+
+<footer>
+
+<p>
+© 2026 Choco Blueberry
+</p>
+
+</footer>
+
+
+
 </Layout>
