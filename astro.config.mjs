@@ -1,6 +1,6 @@
-import { defineConfig } from 'astro/config';
+import { defineConfig } from "astro/config";
 
 export default defineConfig({
-  site: 'https://yisus1907.github.io',
-  base: '/choco-blueberry',
+  site: "https://yisus1907.github.io",
+  base: "/choco-blueberry",
 });

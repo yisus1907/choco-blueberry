@@ -1,339 +1,88 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import "../styles/global.css";
+
+import Header from "../components/Header.astro";
+import Hero from "../components/Hero.astro";
+import Beneficios from "../components/Beneficios.astro";
+import Productos from "../components/Productos.astro";
 ---
 
 <Layout title="Choco Blueberry">
 
 
-<header class="header">
+  <Header />
 
-<div class="container nav">
 
-<div class="logo">
-<img src="/img/logo.png" alt="Choco Blueberry">
-</div>
+  <main>
 
 
-<nav>
-<a href="#inicio">Inicio</a>
-<a href="#productos">Productos</a>
-<a href="#nosotros">Nosotros</a>
-<a href="#contacto">Contacto</a>
-</nav>
+    <Hero />
 
 
-<a class="btn" href="#">
-Comprar
-</a>
+    <Beneficios />
 
 
-</div>
+    <Productos />
 
-</header>
 
 
+    <section id="contacto" class="contacto">
 
-<section class="hero" id="inicio">
 
+      <div class="container">
 
-<div class="container hero-content">
 
+        <h2>
+          Realiza tu pedido
+        </h2>
 
-<h1>
-El sabor natural del
-<span>Chocó Blueberry</span>
-</h1>
 
+        <p>
+          Disfruta arándanos frescos directamente
+          del Chocó Andino.
+        </p>
 
-<p>
-Arándanos frescos cultivados en el corazón
-del Chocó Andino, con calidad, sabor y
-pureza natural.
-</p>
 
+        <a href="#" class="btn">
+          Contactar WhatsApp
+        </a>
 
-<a class="btn hero-btn">
-Conoce nuestros productos
-</a>
 
+      </div>
 
-</div>
 
+    </section>
 
-</section>
 
+  </main>
 
 
 
-<section class="nosotros" id="nosotros">
+  <footer>
 
 
-<div class="container">
+    <div class="container">
 
 
-<h2>
-¿Por qué elegir Choco Blueberry?
-</h2>
+      <h3>
+        Choco Blueberry
+      </h3>
 
 
+      <p>
+        El sabor natural del Chocó Andino.
+      </p>
 
-<div class="cards">
 
+      <p>
+        © 2026 Todos los derechos reservados.
+      </p>
 
-<div class="card">
 
-<div class="icon">
-🌱
-</div>
+    </div>
 
-<h3>
-Producto natural
-</h3>
 
-<p>
-Cultivado con prácticas responsables
-y cuidado del medio ambiente.
-</p>
-
-</div>
-
-
-
-<div class="card">
-
-<div class="icon">
-🫐
-</div>
-
-<h3>
-Máxima frescura
-</h3>
-
-<p>
-Seleccionamos los mejores frutos
-para garantizar calidad.
-</p>
-
-</div>
-
-
-
-
-<div class="card">
-
-<div class="icon">
-🚚
-</div>
-
-<h3>
-Entrega directa
-</h3>
-
-<p>
-Del cultivo directamente
-hasta tu hogar.
-</p>
-
-</div>
-
-
-</div>
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-<section class="productos" id="productos">
-
-
-<div class="container">
-
-
-<h2>
-Nuestros productos
-</h2>
-
-
-
-<div class="productos-grid">
-
-
-<div class="producto">
-
-
-<img src="/img/producto1.png">
-
-
-<h3>
-Caja Premium
-</h3>
-
-
-<ul>
-
-<li>125 gramos - $2.00</li>
-
-<li>500 gramos - $7.70</li>
-
-<li>1 kilogramo - $15.00</li>
-
-</ul>
-
-
-<button>
-Comprar
-</button>
-
-
-</div>
-
-
-
-
-
-<div class="producto">
-
-
-<img src="/img/producto2.png">
-
-
-<h3>
-Caja Grande
-</h3>
-
-
-<ul>
-
-<li>125 gramos - $1.75</li>
-
-<li>500 gramos - $6.85</li>
-
-<li>1 kilogramo - $13.20</li>
-
-</ul>
-
-
-<button>
-Comprar
-</button>
-
-
-</div>
-
-
-
-
-
-<div class="producto">
-
-
-<img src="/img/producto3.png">
-
-
-<h3>
-Caja Mediana
-</h3>
-
-
-<ul>
-
-<li>125 gramos - $1.60</li>
-
-<li>500 gramos - $6.25</li>
-
-<li>1 kilogramo - $12.00</li>
-
-</ul>
-
-
-<button>
-Comprar
-</button>
-
-
-</div>
-
-
-</div>
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-<section class="banner">
-
-
-<div class="container">
-
-
-<h2>
-Frescura directamente del cultivo
-</h2>
-
-
-<p>
-Un producto saludable, delicioso y natural.
-</p>
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-<section class="contacto" id="contacto">
-
-
-<div class="container">
-
-
-<h2>
-Haz tu pedido ahora
-</h2>
-
-
-<p>
-Escríbenos por WhatsApp y recibe tus arándanos.
-</p>
-
-
-<a class="btn">
-Contactar WhatsApp
-</a>
-
-
-</div>
-
-
-</section>
-
-
-
-
-<footer>
-
-<p>
-© 2026 Choco Blueberry
-</p>
-
-</footer>
+  </footer>
 
 
 

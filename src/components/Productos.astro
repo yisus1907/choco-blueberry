@@ -1,0 +1,239 @@
+---
+const base = import.meta.env.BASE_URL;
+---
+
+<section class="productos" id="productos">
+
+  <div class="container">
+
+    <h2>
+      Nuestros productos
+    </h2>
+
+
+    <div class="productos-grid">
+
+
+      <article class="producto">
+
+        <div class="imagen">
+          <img src={`${base}img/producto1.png`} alt="Caja Premium">
+        </div>
+
+        <h3>
+          Caja Premium
+        </h3>
+
+        <p>
+          Arándanos frescos seleccionados.
+        </p>
+
+        <ul>
+          <li>125gr - $2.00</li>
+          <li>500gr - $7.70</li>
+          <li>1kg - $15.00</li>
+        </ul>
+
+        <a href="#" class="comprar">
+          Comprar
+        </a>
+
+      </article>
+
+
+
+      <article class="producto">
+
+        <div class="imagen">
+          <img src={`${base}img/producto2.png`} alt="Caja Grande">
+        </div>
+
+        <h3>
+          Caja Grande
+        </h3>
+
+        <p>
+          Mayor cantidad para compartir.
+        </p>
+
+        <ul>
+          <li>125gr - $1.75</li>
+          <li>500gr - $6.85</li>
+          <li>1kg - $13.20</li>
+        </ul>
+
+        <a href="#" class="comprar">
+          Comprar
+        </a>
+
+      </article>
+
+
+
+      <article class="producto">
+
+        <div class="imagen">
+          <img src={`${base}img/producto3.png`} alt="Caja Mediana">
+        </div>
+
+        <h3>
+          Caja Mediana
+        </h3>
+
+        <p>
+          Presentación práctica y fresca.
+        </p>
+
+        <ul>
+          <li>125gr - $1.60</li>
+          <li>500gr - $6.25</li>
+          <li>1kg - $12.00</li>
+        </ul>
+
+        <a href="#" class="comprar">
+          Comprar
+        </a>
+
+      </article>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<style>
+
+.productos{
+
+padding:90px 0;
+
+}
+
+
+.container{
+
+width:90%;
+
+max-width:1200px;
+
+margin:auto;
+
+}
+
+
+h2{
+
+text-align:center;
+
+font-size:40px;
+
+color:#173d80;
+
+margin-bottom:50px;
+
+}
+
+
+.productos-grid{
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:30px;
+
+}
+
+
+.producto{
+
+background:white;
+
+border-radius:25px;
+
+padding:30px;
+
+text-align:center;
+
+box-shadow:0 10px 30px rgba(0,0,0,.12);
+
+}
+
+
+.imagen img{
+
+width:100%;
+
+height:220px;
+
+object-fit:contain;
+
+}
+
+
+.producto h3{
+
+font-size:25px;
+
+color:#542a91;
+
+}
+
+
+.producto p{
+
+color:#555;
+
+}
+
+
+.producto ul{
+
+padding:0;
+
+}
+
+
+.producto li{
+
+list-style:none;
+
+margin:8px;
+
+}
+
+
+.comprar{
+
+display:inline-block;
+
+margin-top:20px;
+
+background:#2855c5;
+
+color:white;
+
+padding:12px 30px;
+
+border-radius:30px;
+
+text-decoration:none;
+
+}
+
+
+
+@media(max-width:800px){
+
+.productos-grid{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+</style>
