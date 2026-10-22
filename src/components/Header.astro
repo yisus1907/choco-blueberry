@@ -3,9 +3,16 @@
 <div class="container nav">
 
 <div class="logo">
+
 <a href="/">
-Choco<span>Blueberry</span>
+
+<img 
+src={`${import.meta.env.BASE_URL}/img/logo.png`} 
+alt="Choco Blueberry logo"
+/>
+
 </a>
+
 </div>
 
 
@@ -51,7 +58,7 @@ z-index:10;
 
 .nav{
 
-height:90px;
+height:120px;
 
 display:flex;
 
@@ -62,13 +69,24 @@ justify-content:space-between;
 }
 
 
-.logo a{
+.logo img{
 
-font-size:28px;
+width:240px;
 
-font-weight:800;
+height:auto;
 
-color:white;
+display:block;
+
+filter: drop-shadow(0 8px 15px rgba(0,0,0,.35));
+
+transition:.3s ease;
+
+}
+
+
+.logo img:hover{
+
+transform:scale(1.08);
 
 }
 

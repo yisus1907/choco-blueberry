@@ -3,87 +3,35 @@ import Layout from "../layouts/Layout.astro";
 
 import Header from "../components/Header.astro";
 import Hero from "../components/Hero.astro";
-import Beneficios from "../components/Beneficios.astro";
+import Sobre from "../components/Sobre.astro";
 import Productos from "../components/Productos.astro";
+import Proceso from "../components/Proceso.astro";
+import Clientes from "../components/Clientes.astro";
+import Contacto from "../components/Contacto.astro";
+import Footer from "../components/Footer.astro";
 ---
 
 <Layout title="Choco Blueberry">
 
-
   <Header />
-
 
   <main>
 
-
     <Hero />
 
-
-    <Beneficios />
-
+    <Sobre />
 
     <Productos />
 
+    <Proceso />
 
+    <Clientes />
 
-    <section id="contacto" class="contacto">
-
-
-      <div class="container">
-
-
-        <h2>
-          Realiza tu pedido
-        </h2>
-
-
-        <p>
-          Disfruta arándanos frescos directamente
-          del Chocó Andino.
-        </p>
-
-
-        <a href="#" class="btn">
-          Contactar WhatsApp
-        </a>
-
-
-      </div>
-
-
-    </section>
-
+    <Contacto />
 
   </main>
 
 
-
-  <footer>
-
-
-    <div class="container">
-
-
-      <h3>
-        Choco Blueberry
-      </h3>
-
-
-      <p>
-        El sabor natural del Chocó Andino.
-      </p>
-
-
-      <p>
-        © 2026 Todos los derechos reservados.
-      </p>
-
-
-    </div>
-
-
-  </footer>
-
-
+  <Footer />
 
 </Layout>

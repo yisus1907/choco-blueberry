@@ -1,116 +1,299 @@
----
-const base = import.meta.env.BASE_URL;
----
-
 <section class="productos" id="productos">
+
+  <div class="forma forma1"></div>
+  <div class="forma forma2"></div>
+
 
   <div class="container">
 
-    <h2>
-      Nuestros productos
-    </h2>
+
+    <div class="titulo">
+
+      <h2>
+        Nuestros productos
+      </h2>
+
+      <p>
+        Arándanos frescos cultivados en el corazón del Chocó Andino.
+      </p>
+
+    </div>
+
 
 
     <div class="productos-grid">
 
 
-      <article class="producto">
+
+      <article class="producto destacado">
+
+        <span class="etiqueta">
+          Más vendido
+        </span>
+
 
         <div class="imagen">
-          <img src={`${base}img/producto1.png`} alt="Caja Premium">
+          <img src="/choco-blueberry/img/producto1.png" alt="Caja Premium">
         </div>
+
 
         <h3>
           Caja Premium
         </h3>
 
+
         <p>
-          Arándanos frescos seleccionados.
+          Arándanos seleccionados de la mejor calidad.
         </p>
 
-        <ul>
-          <li>125gr - $2.00</li>
-          <li>500gr - $7.70</li>
-          <li>1kg - $15.00</li>
-        </ul>
 
-        <a href="#" class="comprar">
+        <div class="precios">
+
+          <div class="precio">
+
+            <div class="caja pequena">
+              📦
+            </div>
+
+            <div>
+              <strong>125gr</strong>
+              <span>$2.00</span>
+            </div>
+
+          </div>
+
+
+
+          <div class="precio">
+
+            <div class="caja mediana">
+              📦
+            </div>
+
+            <div>
+              <strong>500gr</strong>
+              <span>$7.70</span>
+            </div>
+
+          </div>
+
+
+
+          <div class="precio">
+
+            <div class="caja grande">
+              📦
+            </div>
+
+            <div>
+              <strong>1kg</strong>
+              <span>$15.00</span>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <a href="#contacto" class="comprar">
           Comprar
         </a>
+
 
       </article>
 
 
 
+
+
       <article class="producto">
 
+
         <div class="imagen">
-          <img src={`${base}img/producto2.png`} alt="Caja Grande">
+
+          <img src="/choco-blueberry/img/producto2.png" alt="Caja Grande">
+
         </div>
+
 
         <h3>
           Caja Grande
         </h3>
 
+
         <p>
           Mayor cantidad para compartir.
         </p>
 
-        <ul>
-          <li>125gr - $1.75</li>
-          <li>500gr - $6.85</li>
-          <li>1kg - $13.20</li>
-        </ul>
 
-        <a href="#" class="comprar">
+
+        <div class="precios">
+
+
+          <div class="precio">
+
+            <div class="caja pequena">
+              📦
+            </div>
+
+            <div>
+              <strong>125gr</strong>
+              <span>$1.75</span>
+            </div>
+
+          </div>
+
+
+
+          <div class="precio">
+
+            <div class="caja mediana">
+              📦
+            </div>
+
+            <div>
+              <strong>500gr</strong>
+              <span>$6.85</span>
+            </div>
+
+          </div>
+
+
+
+          <div class="precio">
+
+            <div class="caja grande">
+              📦
+            </div>
+
+            <div>
+              <strong>1kg</strong>
+              <span>$13.20</span>
+            </div>
+
+          </div>
+
+
+        </div>
+
+
+        <a href="#contacto" class="comprar">
           Comprar
         </a>
+
 
       </article>
 
 
 
+
+
+
       <article class="producto">
 
+
         <div class="imagen">
-          <img src={`${base}img/producto3.png`} alt="Caja Mediana">
+
+          <img src="/choco-blueberry/img/producto3.png" alt="Caja Mediana">
+
         </div>
+
 
         <h3>
           Caja Mediana
         </h3>
 
+
         <p>
           Presentación práctica y fresca.
         </p>
 
-        <ul>
-          <li>125gr - $1.60</li>
-          <li>500gr - $6.25</li>
-          <li>1kg - $12.00</li>
-        </ul>
 
-        <a href="#" class="comprar">
+
+        <div class="precios">
+
+
+          <div class="precio">
+
+            <div class="caja pequena">
+              📦
+            </div>
+
+            <div>
+              <strong>125gr</strong>
+              <span>$1.60</span>
+            </div>
+
+          </div>
+
+
+
+          <div class="precio">
+
+            <div class="caja mediana">
+              📦
+            </div>
+
+            <div>
+              <strong>500gr</strong>
+              <span>$6.25</span>
+            </div>
+
+          </div>
+
+
+
+          <div class="precio">
+
+            <div class="caja grande">
+              📦
+            </div>
+
+            <div>
+              <strong>1kg</strong>
+              <span>$12.00</span>
+            </div>
+
+          </div>
+
+
+        </div>
+
+
+
+        <a href="#contacto" class="comprar">
           Comprar
         </a>
+
 
       </article>
 
 
     </div>
 
+
   </div>
+
 
 </section>
 
 
+
 <style>
+
 
 .productos{
 
-padding:90px 0;
+position:relative;
+
+overflow:hidden;
+
+padding:100px 0;
+
+background:#F6F8F0;
 
 }
+
 
 
 .container{
@@ -121,20 +304,42 @@ max-width:1200px;
 
 margin:auto;
 
+position:relative;
+
+z-index:2;
+
 }
 
 
-h2{
+
+.titulo{
 
 text-align:center;
 
-font-size:40px;
-
-color:#173d80;
-
-margin-bottom:50px;
+margin-bottom:55px;
 
 }
+
+
+
+.titulo h2{
+
+font-size:42px;
+
+color:#3F6B45;
+
+}
+
+
+
+.titulo p{
+
+font-size:18px;
+
+color:#555;
+
+}
+
 
 
 .productos-grid{
@@ -143,44 +348,84 @@ display:grid;
 
 grid-template-columns:repeat(3,1fr);
 
-gap:30px;
+gap:35px;
 
 }
+
 
 
 .producto{
 
 background:white;
 
-border-radius:25px;
-
 padding:30px;
+
+border-radius:30px;
 
 text-align:center;
 
-box-shadow:0 10px 30px rgba(0,0,0,.12);
+box-shadow:0 12px 30px rgba(0,0,0,.09);
+
+border:1px solid #E3E8D8;
+
+position:relative;
+
+transition:.3s;
 
 }
+
+
+
+.producto:hover{
+
+transform:translateY(-8px);
+
+}
+
+
+
+.etiqueta{
+
+position:absolute;
+
+top:20px;
+
+right:20px;
+
+background:#3155A6;
+
+color:white;
+
+padding:8px 18px;
+
+border-radius:20px;
+
+font-size:14px;
+
+}
+
 
 
 .imagen img{
 
 width:100%;
 
-height:220px;
+height:240px;
 
 object-fit:contain;
 
 }
 
 
+
 .producto h3{
 
-font-size:25px;
+font-size:26px;
 
-color:#542a91;
+color:#3155A6;
 
 }
+
 
 
 .producto p{
@@ -190,43 +435,197 @@ color:#555;
 }
 
 
-.producto ul{
 
-padding:0;
+.precios{
+
+margin-top:25px;
+
+}
+
+
+
+.precio{
+
+display:flex;
+
+align-items:center;
+
+gap:15px;
+
+background:#F8FAF3;
+
+padding:12px;
+
+border-radius:18px;
+
+margin-bottom:12px;
+
+text-align:left;
 
 }
 
 
-.producto li{
 
-list-style:none;
+/* TAMAÑO DE LAS CAJITAS */
 
-margin:8px;
+.caja{
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+border-radius:15px;
+
+background:#EAF3E6;
 
 }
+
+
+
+.pequena{
+
+width:45px;
+
+height:45px;
+
+font-size:22px;
+
+}
+
+
+
+.mediana{
+
+width:55px;
+
+height:55px;
+
+background:#DDEBFA;
+
+font-size:30px;
+
+}
+
+
+
+.grande{
+
+width:65px;
+
+height:65px;
+
+background:#E8DCC8;
+
+font-size:38px;
+
+}
+
+
+
+.precio strong{
+
+display:block;
+
+font-size:18px;
+
+color:#3155A6;
+
+}
+
+
+
+.precio span{
+
+display:block;
+
+font-weight:bold;
+
+color:#3F6B45;
+
+}
+
 
 
 .comprar{
 
 display:inline-block;
 
-margin-top:20px;
+margin-top:25px;
 
-background:#2855c5;
+padding:14px 35px;
+
+background:#6B4AA5;
 
 color:white;
-
-padding:12px 30px;
 
 border-radius:30px;
 
 text-decoration:none;
 
+font-weight:bold;
+
 }
 
 
 
-@media(max-width:800px){
+.comprar:hover{
+
+background:#3F6B45;
+
+}
+
+
+
+/* FORMAS ORGANICAS */
+
+
+.forma{
+
+position:absolute;
+
+border-radius:60% 40% 50% 50%;
+
+opacity:.6;
+
+}
+
+
+
+.forma1{
+
+width:260px;
+
+height:260px;
+
+background:#DDEBFA;
+
+right:-80px;
+
+top:-80px;
+
+}
+
+
+
+.forma2{
+
+width:180px;
+
+height:180px;
+
+background:#D7EBCB;
+
+left:-60px;
+
+bottom:-40px;
+
+}
+
+
+
+@media(max-width:900px){
 
 .productos-grid{
 
@@ -235,5 +634,6 @@ grid-template-columns:1fr;
 }
 
 }
+
 
 </style>

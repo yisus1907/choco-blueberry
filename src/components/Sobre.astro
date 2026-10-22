@@ -1,0 +1,441 @@
+<section class="sobre" id="sobre">
+
+  <!-- Formas decorativas -->
+  <div class="forma forma1"></div>
+  <div class="forma forma2"></div>
+
+
+  <div class="container">
+
+
+    <div class="titulo">
+
+      <h2>
+        Sobre nosotros
+      </h2>
+
+      <h3>
+        Un proyecto que nace de la pasión
+      </h3>
+
+    </div>
+
+
+
+    <div class="contenido">
+
+
+
+      <div class="historia">
+
+
+        <p>
+          Nuestro emprendimiento comenzó hace casi cuatro años con pruebas
+          y errores para adaptar las plantas al clima de nuestra zona.
+        </p>
+
+
+        <p>
+          A partir de los dos años logramos encontrar las técnicas de cuidado,
+          fertilización y control de plagas que nos permiten tener un cultivo
+          sano y productivo.
+        </p>
+
+
+        <p>
+          Hoy llevamos aproximadamente nueve meses de producción y somos los
+          pioneros del cultivo de arándanos en el Chocó Andino.
+        </p>
+
+
+
+
+        <div class="beneficios">
+
+
+
+          <div class="item">
+
+
+            <div class="icono">
+              🌿
+            </div>
+
+
+            <div>
+
+              <h4>
+                100% naturales
+              </h4>
+
+              <p>
+                Sin pesticidas ni químicos.
+              </p>
+
+            </div>
+
+
+          </div>
+
+
+
+
+
+          <div class="item">
+
+
+            <div class="icono">
+              ⛰️
+            </div>
+
+
+            <div>
+
+              <h4>
+                Pioneros de la zona
+              </h4>
+
+              <p>
+                Somos los únicos con este cultivo en el Chocó Andino.
+              </p>
+
+            </div>
+
+
+          </div>
+
+
+
+
+
+          <div class="item">
+
+
+            <div class="icono">
+              ❤️
+            </div>
+
+
+            <div>
+
+              <h4>
+                Salud en cada fruto
+              </h4>
+
+              <p>
+                El arándano es una fruta nutritiva y deliciosa.
+              </p>
+
+            </div>
+
+
+          </div>
+
+
+
+        </div>
+
+
+
+      </div>
+
+
+
+
+
+      <div class="imagen">
+
+
+        <img
+        src="/choco-blueberry/img/cultivo.jpg"
+        alt="Cultivo propio de arándanos"
+        >
+
+
+        <div class="etiqueta">
+
+          🫐 Cultivo propio
+
+        </div>
+
+
+      </div>
+
+
+
+    </div>
+
+
+  </div>
+
+
+</section>
+
+
+
+<style>
+
+
+.sobre{
+
+position:relative;
+
+overflow:hidden;
+
+padding:100px 0;
+
+background:#FAF7EF;
+
+}
+
+
+
+.container{
+
+width:90%;
+
+max-width:1200px;
+
+margin:auto;
+
+position:relative;
+
+z-index:2;
+
+}
+
+
+
+.titulo{
+
+text-align:center;
+
+margin-bottom:55px;
+
+}
+
+
+
+.titulo h2{
+
+font-size:44px;
+
+color:#3F6B45;
+
+}
+
+
+
+.titulo h3{
+
+font-size:27px;
+
+color:#8A6A45;
+
+font-style:italic;
+
+}
+
+
+
+.contenido{
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:60px;
+
+align-items:center;
+
+}
+
+
+
+.historia p{
+
+font-size:18px;
+
+line-height:1.8;
+
+color:#555;
+
+}
+
+
+
+.beneficios{
+
+margin-top:40px;
+
+}
+
+
+
+.item{
+
+display:flex;
+
+align-items:center;
+
+gap:20px;
+
+margin-bottom:25px;
+
+}
+
+
+
+.icono{
+
+width:70px;
+
+height:70px;
+
+background:#EAF3E6;
+
+border-radius:50%;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+font-size:32px;
+
+box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+}
+
+
+
+.item h4{
+
+margin:0;
+
+font-size:22px;
+
+color:#3155A6;
+
+}
+
+
+
+.item p{
+
+margin:5px 0;
+
+}
+
+
+
+.imagen{
+
+position:relative;
+
+}
+
+
+
+.imagen img{
+
+width:100%;
+
+height:480px;
+
+object-fit:cover;
+
+border-radius:35px;
+
+box-shadow:0 15px 35px rgba(0,0,0,.12);
+
+}
+
+
+
+.etiqueta{
+
+position:absolute;
+
+bottom:25px;
+
+left:25px;
+
+background:white;
+
+padding:15px 25px;
+
+border-radius:30px;
+
+color:#3F6B45;
+
+font-size:20px;
+
+font-weight:bold;
+
+box-shadow:0 8px 20px rgba(0,0,0,.15);
+
+}
+
+
+
+/* FORMAS ORGANICAS */
+
+
+.forma{
+
+position:absolute;
+
+border-radius:60% 40% 50% 50%;
+
+opacity:.6;
+
+}
+
+
+
+.forma1{
+
+width:260px;
+
+height:260px;
+
+background:#D7EBCB;
+
+top:-80px;
+
+right:-70px;
+
+}
+
+
+
+.forma2{
+
+width:180px;
+
+height:180px;
+
+background:#E8DCC8;
+
+bottom:-40px;
+
+left:-50px;
+
+}
+
+
+
+@media(max-width:900px){
+
+.contenido{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+
+</style>

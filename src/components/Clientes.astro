@@ -1,0 +1,321 @@
+<section class="clientes" id="clientes">
+
+  <!-- Decoraciones orgánicas -->
+  <div class="forma forma1"></div>
+  <div class="forma forma2"></div>
+
+
+  <div class="container">
+
+
+    <div class="titulo">
+
+      <h2>
+        Lo que dicen nuestros clientes
+      </h2>
+
+      <p>
+        La experiencia de quienes disfrutan nuestros arándanos.
+      </p>
+
+    </div>
+
+
+
+    <div class="tarjetas">
+
+
+      <article class="cliente">
+
+        <div class="icono">
+          🫐
+        </div>
+
+
+        <p>
+          "Los arándanos son deliciosos, se nota que son naturales.
+          Además, la entrega fue muy rápida. 100% recomendados."
+        </p>
+
+
+        <h4>
+          María González
+        </h4>
+
+
+      </article>
+
+
+
+
+
+      <article class="cliente">
+
+        <div class="icono">
+          🌿
+        </div>
+
+
+        <p>
+          "Excelente calidad, el sabor es increíble.
+          Siempre compro aquí porque sé que son frescos y sin químicos."
+        </p>
+
+
+        <h4>
+          Carlos Mendoza
+        </h4>
+
+
+      </article>
+
+
+
+
+
+      <article class="cliente">
+
+        <div class="icono">
+          ❤️
+        </div>
+
+
+        <p>
+          "Un producto diferente y saludable.
+          Me encanta apoyar emprendimientos locales del Chocó Andino."
+        </p>
+
+
+        <h4>
+          Ana Rodríguez
+        </h4>
+
+
+      </article>
+
+
+
+    </div>
+
+
+  </div>
+
+
+</section>
+
+
+
+<style>
+
+
+.clientes{
+
+position:relative;
+
+overflow:hidden;
+
+padding:100px 0;
+
+background:#EEF4FF;
+
+}
+
+
+
+.container{
+
+width:90%;
+
+max-width:1200px;
+
+margin:auto;
+
+position:relative;
+
+z-index:2;
+
+}
+
+
+
+.titulo{
+
+text-align:center;
+
+margin-bottom:55px;
+
+}
+
+
+
+.titulo h2{
+
+font-size:42px;
+
+color:#3155A6;
+
+}
+
+
+
+.titulo p{
+
+font-size:18px;
+
+color:#555;
+
+}
+
+
+
+.tarjetas{
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:35px;
+
+}
+
+
+
+.cliente{
+
+background:white;
+
+padding:35px;
+
+border-radius:30px;
+
+text-align:center;
+
+box-shadow:0 12px 30px rgba(0,0,0,.08);
+
+border:1px solid #DCE5FA;
+
+transition:.3s;
+
+}
+
+
+
+.cliente:hover{
+
+transform:translateY(-8px);
+
+}
+
+
+
+.icono{
+
+width:70px;
+
+height:70px;
+
+margin:auto;
+
+background:#EAF3E6;
+
+border-radius:50%;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+font-size:35px;
+
+}
+
+
+
+.cliente p{
+
+font-size:17px;
+
+line-height:1.7;
+
+color:#555;
+
+font-style:italic;
+
+margin-top:25px;
+
+}
+
+
+
+.cliente h4{
+
+color:#3F6B45;
+
+font-size:20px;
+
+margin-top:25px;
+
+}
+
+
+
+/* FORMAS NATURALES */
+
+.forma{
+
+position:absolute;
+
+border-radius:60% 40% 50% 50%;
+
+opacity:.6;
+
+}
+
+
+
+.forma1{
+
+width:250px;
+
+height:250px;
+
+background:#CFE0FA;
+
+top:-80px;
+
+right:-70px;
+
+}
+
+
+
+.forma2{
+
+width:170px;
+
+height:170px;
+
+background:#D7EBCB;
+
+bottom:-50px;
+
+left:-50px;
+
+}
+
+
+
+
+@media(max-width:900px){
+
+.tarjetas{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+
+</style>
