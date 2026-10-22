@@ -1,3 +1,6 @@
+---
+const base = import.meta.env.BASE_URL;
+---
 <section class="proceso" id="proceso">
 
   <!-- Formas decorativas -->
@@ -29,10 +32,7 @@
       <div class="imagen">
 
 
-        <img 
-        src="/choco-blueberry/img/proceso.jpg"
-        alt="Proceso de cultivo de arándanos"
-        >
+     <img src={`${base}img/proceso.jpg`} alt="Proceso de cosecha">
 
 
         <div class="frase">

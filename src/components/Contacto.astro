@@ -1,3 +1,6 @@
+---
+const base = import.meta.env.BASE_URL;
+---
 <section class="contacto" id="contacto">
 
   <!-- formas decorativas -->
@@ -34,7 +37,7 @@
 
 
           <a 
-          href="https://wa.me/593XXXXXXXXX"
+          href="https://wa.me/593 99 496 0381"
           class="whatsapp">
 
           💬 WhatsApp
@@ -73,9 +76,7 @@
       <div class="imagen">
 
 
-        <img 
-        src="/choco-blueberry/img/contacto.jpg"
-        alt="Arándanos frescos">
+     <img src={`${base}img/contacto.jpg`} alt="Contacto Choco Blueberry">
 
 
       </div>
