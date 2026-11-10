@@ -107,15 +107,11 @@
 
 <style>
 
-
 .clientes{
 
 position:relative;
-
 overflow:hidden;
-
 padding:100px 0;
-
 background:#EEF4FF;
 
 }
@@ -125,13 +121,9 @@ background:#EEF4FF;
 .container{
 
 width:90%;
-
 max-width:1200px;
-
 margin:auto;
-
 position:relative;
-
 z-index:2;
 
 }
@@ -141,7 +133,6 @@ z-index:2;
 .titulo{
 
 text-align:center;
-
 margin-bottom:55px;
 
 }
@@ -151,7 +142,6 @@ margin-bottom:55px;
 .titulo h2{
 
 font-size:42px;
-
 color:#3155A6;
 
 }
@@ -161,7 +151,6 @@ color:#3155A6;
 .titulo p{
 
 font-size:18px;
-
 color:#555;
 
 }
@@ -171,9 +160,7 @@ color:#555;
 .tarjetas{
 
 display:grid;
-
 grid-template-columns:repeat(3,1fr);
-
 gap:35px;
 
 }
@@ -260,7 +247,7 @@ margin-top:25px;
 
 
 
-/* FORMAS NATURALES */
+/* FORMAS */
 
 .forma{
 
@@ -306,14 +293,144 @@ left:-50px;
 
 
 
+/* TABLET */
 
 @media(max-width:900px){
 
 .tarjetas{
 
-grid-template-columns:1fr;
+grid-template-columns:1fr 1fr;
 
 }
+
+}
+
+
+
+/* CELULAR */
+
+@media(max-width:600px){
+
+
+.clientes{
+
+padding:70px 0;
+
+}
+
+
+
+.container{
+
+width:88%;
+
+}
+
+
+
+.titulo{
+
+margin-bottom:35px;
+
+}
+
+
+
+.titulo h2{
+
+font-size:34px;
+
+line-height:1.2;
+
+}
+
+
+
+.titulo p{
+
+font-size:16px;
+
+line-height:1.5;
+
+}
+
+
+
+.tarjetas{
+
+grid-template-columns:1fr;
+
+gap:25px;
+
+}
+
+
+
+.cliente{
+
+padding:28px 22px;
+
+border-radius:25px;
+
+}
+
+
+
+.icono{
+
+width:60px;
+
+height:60px;
+
+font-size:28px;
+
+}
+
+
+
+.cliente p{
+
+font-size:16px;
+
+line-height:1.6;
+
+margin-top:20px;
+
+}
+
+
+
+.cliente h4{
+
+font-size:18px;
+
+margin-top:20px;
+
+}
+
+
+}
+
+
+
+/* CELULARES PEQUEÑOS */
+
+@media(max-width:400px){
+
+
+.titulo h2{
+
+font-size:30px;
+
+}
+
+
+.cliente{
+
+padding:25px 18px;
+
+}
+
 
 }
 
